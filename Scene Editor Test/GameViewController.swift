@@ -11,11 +11,14 @@ import SpriteKit
 
 class GameViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        if let scene = GameScene(fileNamed:"GameScene") {
-            // Configure the view.
+    private var scenes : [String: Scene] =
+        [ "logo" : LogoScene(fileNamed:"LogoScene")!,
+          "menu" : MenuScene(fileNamed:"MenuScene")!]
+    
+    private func showScene( sceneName : String ) -> SKScene? {
+        let scene = scenes[sceneName]
+        
+        if scene != nil  {
             let skView = self.view as! SKView
             skView.showsFPS = true
             skView.showsNodeCount = true
@@ -24,10 +27,46 @@ class GameViewController: UIViewController {
             skView.ignoresSiblingOrder = true
             
             /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .AspectFill
+            scene!.scaleMode = .AspectFill
+            scene!.viewController = self
             
             skView.presentScene(scene)
         }
+        
+        return scene
+    }
+    
+    func showGameScene() {
+        let scene = GameScene(size: (view?.bounds.size)!)
+        
+        scene.loadTiles("level000")
+        
+        let skView = self.view as! SKView
+        skView.showsFPS = true
+        skView.showsNodeCount = true
+            
+        /* Sprite Kit applies additional optimizations to improve rendering performance */
+        skView.ignoresSiblingOrder = true
+            
+        /* Set the scale mode to scale to fit the window */
+        scene.scaleMode = .AspectFill
+        scene.viewController = self
+            
+        skView.presentScene(scene)
+     }
+
+    func showLogoScene() {
+        self.showScene("logo")
+    }
+
+    func showMenuScene() {
+        self.showScene("menu")
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.showLogoScene()
     }
 
     override func shouldAutorotate() -> Bool {
@@ -50,4 +89,5 @@ class GameViewController: UIViewController {
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
+    
 }

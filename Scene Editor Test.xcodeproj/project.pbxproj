@@ -16,6 +16,15 @@
 		5E5CDA661CBC37B100EB1F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5CDA641CBC37B100EB1F83 /* LaunchScreen.storyboard */; };
 		5E5CDA711CBC37B200EB1F83 /* Scene_Editor_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5CDA701CBC37B200EB1F83 /* Scene_Editor_TestTests.swift */; };
 		5E5CDA7C1CBC37B200EB1F83 /* Scene_Editor_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5CDA7B1CBC37B200EB1F83 /* Scene_Editor_TestUITests.swift */; };
+		5E5CDA8E1CBC395500EB1F83 /* LogoScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E5CDA8D1CBC395500EB1F83 /* LogoScene.sks */; };
+		5E5CDA901CBC3B2600EB1F83 /* LogoScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5CDA8F1CBC3B2600EB1F83 /* LogoScene.swift */; };
+		5ECBEC231CBC6B620083C91D /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5ECBEC221CBC6B620083C91D /* MenuScene.sks */; };
+		5ECBEC251CBC6B7F0083C91D /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBEC241CBC6B7F0083C91D /* MenuScene.swift */; };
+		5ECBEC271CBC77340083C91D /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBEC261CBC77340083C91D /* Scene.swift */; };
+		5ECBEC2A1CBC78FE0083C91D /* Sparklies.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5ECBEC281CBC78FE0083C91D /* Sparklies.sks */; };
+		5ECBEC2B1CBC78FE0083C91D /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECBEC291CBC78FE0083C91D /* spark.png */; };
+		5ED583861CBD4C2A00A875A8 /* level000.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ED583851CBD4C2A00A875A8 /* level000.plist */; };
+		5ED583881CBD4F7B00A875A8 /* TileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED583871CBD4F7B00A875A8 /* TileNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,15 @@
 		5E5CDA771CBC37B200EB1F83 /* Scene Editor TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scene Editor TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5CDA7B1CBC37B200EB1F83 /* Scene_Editor_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene_Editor_TestUITests.swift; sourceTree = "<group>"; };
 		5E5CDA7D1CBC37B200EB1F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E5CDA8D1CBC395500EB1F83 /* LogoScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LogoScene.sks; sourceTree = "<group>"; };
+		5E5CDA8F1CBC3B2600EB1F83 /* LogoScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoScene.swift; sourceTree = "<group>"; };
+		5ECBEC221CBC6B620083C91D /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
+		5ECBEC241CBC6B7F0083C91D /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		5ECBEC261CBC77340083C91D /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		5ECBEC281CBC78FE0083C91D /* Sparklies.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Sparklies.sks; sourceTree = "<group>"; };
+		5ECBEC291CBC78FE0083C91D /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		5ED583851CBD4C2A00A875A8 /* level000.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = level000.plist; path = levels/level000.plist; sourceTree = "<group>"; };
+		5ED583871CBD4F7B00A875A8 /* TileNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +121,17 @@
 			children = (
 				5E5CDA571CBC37B100EB1F83 /* AppDelegate.swift */,
 				5E5CDA591CBC37B100EB1F83 /* GameScene.sks */,
+				5ED583851CBD4C2A00A875A8 /* level000.plist */,
+				5ED583871CBD4F7B00A875A8 /* TileNode.swift */,
+				5E5CDA8D1CBC395500EB1F83 /* LogoScene.sks */,
+				5E5CDA8F1CBC3B2600EB1F83 /* LogoScene.swift */,
 				5E5CDA5B1CBC37B100EB1F83 /* GameScene.swift */,
 				5E5CDA5D1CBC37B100EB1F83 /* GameViewController.swift */,
+				5ECBEC261CBC77340083C91D /* Scene.swift */,
+				5ECBEC221CBC6B620083C91D /* MenuScene.sks */,
+				5ECBEC281CBC78FE0083C91D /* Sparklies.sks */,
+				5ECBEC291CBC78FE0083C91D /* spark.png */,
+				5ECBEC241CBC6B7F0083C91D /* MenuScene.swift */,
 				5E5CDA5F1CBC37B100EB1F83 /* Main.storyboard */,
 				5E5CDA621CBC37B100EB1F83 /* Assets.xcassets */,
 				5E5CDA641CBC37B100EB1F83 /* LaunchScreen.storyboard */,
@@ -236,7 +263,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E5CDA5A1CBC37B100EB1F83 /* GameScene.sks in Resources */,
+				5ECBEC2A1CBC78FE0083C91D /* Sparklies.sks in Resources */,
+				5ECBEC231CBC6B620083C91D /* MenuScene.sks in Resources */,
+				5E5CDA8E1CBC395500EB1F83 /* LogoScene.sks in Resources */,
 				5E5CDA661CBC37B100EB1F83 /* LaunchScreen.storyboard in Resources */,
+				5ED583861CBD4C2A00A875A8 /* level000.plist in Resources */,
+				5ECBEC2B1CBC78FE0083C91D /* spark.png in Resources */,
 				5E5CDA631CBC37B100EB1F83 /* Assets.xcassets in Resources */,
 				5E5CDA611CBC37B100EB1F83 /* Main.storyboard in Resources */,
 			);
@@ -264,7 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E5CDA5C1CBC37B100EB1F83 /* GameScene.swift in Sources */,
+				5E5CDA901CBC3B2600EB1F83 /* LogoScene.swift in Sources */,
+				5ECBEC271CBC77340083C91D /* Scene.swift in Sources */,
+				5ECBEC251CBC6B7F0083C91D /* MenuScene.swift in Sources */,
 				5E5CDA5E1CBC37B100EB1F83 /* GameViewController.swift in Sources */,
+				5ED583881CBD4F7B00A875A8 /* TileNode.swift in Sources */,
 				5E5CDA581CBC37B100EB1F83 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +530,7 @@
 				5E5CDA821CBC37B200EB1F83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E5CDA831CBC37B200EB1F83 /* Build configuration list for PBXNativeTarget "Scene Editor TestTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +539,7 @@
 				5E5CDA851CBC37B200EB1F83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E5CDA861CBC37B200EB1F83 /* Build configuration list for PBXNativeTarget "Scene Editor TestUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +548,7 @@
 				5E5CDA881CBC37B200EB1F83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
